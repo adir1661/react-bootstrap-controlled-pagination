@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import 'bootstrap/dist/css/bootstrap.min.css'; added bootstrap as script tag in public/index.html
 import styles from './App.module.css';
-import { Pagination } from 'react-bootstrap-pagination'
+import { Pagination } from 'react-bootstrap-controlled-pagination'
 console.log(styles);
 const App = () => {
   const [number, setNumber] = useState(0);

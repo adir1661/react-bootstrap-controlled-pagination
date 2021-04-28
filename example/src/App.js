@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css'; added as script tag in public/index.html
+// import 'bootstrap/dist/css/bootstrap.min.css'; added bootstrap as script tag in public/index.html
 import styles from './App.module.css';
 import { Pagination } from 'react-bootstrap-pagination'
 console.log(styles);

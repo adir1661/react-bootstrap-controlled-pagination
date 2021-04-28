@@ -1,6 +1,6 @@
 {
-  "short_name": "react-bootstrap-pagination",
-  "name": "react-bootstrap-pagination",
+  "short_name": "react-bootstrap-controlled-pagination",
+  "name": "react-bootstrap-controlled-pagination",
   "icons": [
     {
       "src": "favicon.ico",

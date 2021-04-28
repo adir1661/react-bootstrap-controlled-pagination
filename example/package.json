@@ -1,5 +1,5 @@
 {
-  "name": "react-bootstrap-pagination-example",
+  "name": "react-bootstrap-controlled-pagination-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -13,7 +13,7 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "react-bootstrap-pagination": "file:.."
+    "react-bootstrap-controlled-pagination": "file:.."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

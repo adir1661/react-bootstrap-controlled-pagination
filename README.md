@@ -1,6 +1,6 @@
 # react-bootstrap-controlled-pagination
 
-> pagination controlled component for ease of use for react-bootstrap applications
+> pagination controlled component for ease of use for react-bootstrap applications 
 
 [![NPM](https://img.shields.io/npm/v/react-bootstrap-controlled-pagination.svg)](https://www.npmjs.com/package/react-bootstrap-controlled-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -17,7 +17,6 @@ import React, { useState } from 'react'
 // import 'bootstrap/dist/css/bootstrap.min.css'; added bootstrap as script tag in public/index.html
 import styles from './App.module.css';
 import { Pagination } from 'react-bootstrap-controlled-pagination'
-console.log(styles);
 const App = () => {
   const [number, setNumber] = useState(0);
 

@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-controlled-pagination",
-  "version": "1.0.0",
+  "version": "1.0.01",
   "description": "pagination controlled component for ease of use for react-bootstrap applications",
   "author": "adir1661",
   "license": "MIT",

@@ -2,29 +2,33 @@ import React from 'react';
 import PaginationBS from "react-bootstrap/Pagination";
 import propTypes from 'prop-types';
 
-function Pagination({ startButton, prev, endButton, next, onSelect, value, end, start },ref) {
+function Pagination({ startButton, prev, endButton, next, onSelect, value, end, start }, ref) {
   return <PaginationBS ref={ref}>
-    {startButton && start +1< value &&  <PaginationBS.First onClick={() => onSelect(start)} />}
-    {prev && start  < value &&<PaginationBS.Prev onClick={() => onSelect(value - 1)} />}
+    {startButton && start + 1 < value &&
+      <PaginationBS.First onClick={() => onSelect(start)} />
+    }
+    {prev && start < value &&
+      <PaginationBS.Prev onClick={() => onSelect(value - 1)} />
+    }
     {value > start + 5 && [
-      <PaginationBS.Item onClick={() => onSelect(value - 5)} >{value - 5}</PaginationBS.Item>,
+      <PaginationBS.Item key={value - 5} onClick={() => onSelect(value - 5)} >{value - 5}</PaginationBS.Item>,
       <PaginationBS.Ellipsis />]
     }
 
-    {value - 2 >= start && <PaginationBS.Item onClick={() => onSelect(value - 2)}>{value - 2}</PaginationBS.Item>}
-    {value - 1 >= start && <PaginationBS.Item onClick={() => onSelect(value - 1)}>{value - 1}</PaginationBS.Item>}
-    <PaginationBS.Item active>
+    {value - 2 >= start && <PaginationBS.Item key={value - 2} onClick={() => onSelect(value - 2)}>{value - 2}</PaginationBS.Item>}
+    {value - 1 >= start && <PaginationBS.Item key={value - 1} onClick={() => onSelect(value - 1)}>{value - 1}</PaginationBS.Item>}
+    <PaginationBS.Item active  key={value} >
       {value}
     </PaginationBS.Item>
-    {value + 1 <= end && <PaginationBS.Item onClick={() => onSelect(value + 1)}>{value + 1}</PaginationBS.Item>}
-    {value + 2 <= end && <PaginationBS.Item onClick={() => onSelect(value + 2)}>{value + 2}</PaginationBS.Item>}
+    {value + 1 <= end && <PaginationBS.Item key={value+1} onClick={() => onSelect(value + 1)}>{value + 1}</PaginationBS.Item>}
+    {value + 2 <= end && <PaginationBS.Item  key={value+2} onClick={() => onSelect(value + 2)}>{value + 2}</PaginationBS.Item>}
 
     {value < end - 5 && [
       <PaginationBS.Ellipsis />,
-      <PaginationBS.Item onClick={() => onSelect(value + 5)} >{value + 5}</PaginationBS.Item>]
+      <PaginationBS.Item key={value+5} onClick={() => onSelect(value + 5)} >{value + 5}</PaginationBS.Item>]
     }
-    {next && end > value &&<PaginationBS.Next onClick={() => onSelect(value + 1)} />}
-    {endButton && end-1 > value &&<PaginationBS.Last onClick={() => onSelect(end)} />}
+    {next && end > value && <PaginationBS.Next onClick={() => onSelect(value + 1)} />}
+    {endButton && end - 1 > value && <PaginationBS.Last onClick={() => onSelect(end)} />}
   </PaginationBS>
 }
 Pagination = React.forwardRef(Pagination)

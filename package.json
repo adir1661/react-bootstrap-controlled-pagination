@@ -24,8 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "file:../node_modules/react",
-    "react-bootstrap": "^1.0.0-beta.14"
+    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
+    "react-bootstrap": "^1.0.0-beta.14 || ^2.0.0"
   },
   "devDependencies": {
     "react-bootstrap": "^1.0.0-beta.14",
